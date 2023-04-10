@@ -1,0 +1,22 @@
+input_dir: Resources
+output_dir: Generated/
+strings:
+  inputs:
+    - Localize/ja.lproj
+  outputs:
+    - templateName: structured-swift5
+      output: StringsGenerated.swift
+      params:
+        publicAccess: true
+
+xcassets:
+  - inputs:
+      - ColorAssets.xcassets
+      - ImageAssets.xcassets
+    outputs:
+      - templateName: swift5
+        output: CommonAssets.swift
+        params:
+          forceProvidesNamespaces: true
+          publicAccess: true
+          enumName: CommonAssets

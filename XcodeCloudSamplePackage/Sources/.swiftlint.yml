@@ -1,0 +1,8 @@
+line_length: 150
+custom_rules:
+  disable_print:
+    included: ".*\\.swift"
+    name: "print usage"
+    regex: "((\\bprint)|(Swift\\.print))\\s*\\("
+    message: "Prefer Logger over print"
+    severity: warning
