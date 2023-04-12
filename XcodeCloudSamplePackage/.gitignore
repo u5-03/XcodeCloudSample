@@ -7,3 +7,7 @@ DerivedData/
 .swiftpm/config/registries.json
 .swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
 .netrc
+
+# GeneratedのフォルダだけをGit管理するため(個別に手動生成しなくてもいいようにするため)
+Generated/
+!Generated/.gitignore
